@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>WeatherSynth</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+    <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+</head>
+
+<body>
+    <div id="sidebar">
+        <h1>WeatherSynth</h1>
+        <p id="description">WeatherSynth is a web-based synthesizer with no knobs - it changes based on the weather. Temperature, humidity, current conditions, wind speed, and cloud cover all have a hand in how the sound is generated. <b>Move the marker</b> to different locations to have the weather play the synthesizer.</p>
+        <div id="credits">
+            <p>Powered by <a href="http://forecast.io/">Forecast.io</a>.</p>
+            <p>Put on the map using <a href="https://www.mapbox.com/" />Mapbox</a>.</p>
+            <p>Synthesized by <a href="http://www.w3.org/TR/2013/WD-webaudio-20131010/">the Web Audio API</a>.</p>
+            <p>Made by <a href="http://andy.miccolis.net/">Andy Miccolis</a> for <a href="http://nyc.musichackday.org/2013/">Music Hack Day NYC 2013</a>.</p>
+        </div>
+        <input type="button" value="Play">
+    </div>
+    <nav id='menu-ui' class='menu-ui'></nav>
+    <h2 id="currentTemp"></h2>
+    <p id="currentConditions"></p>
+    <p id="wind"></p>
+    <p id="wetness"></p>
+    </div>
+    <div id='map'></div>
+    <script type="text/javascript" src="js/weathersynth.js"></script>
+</body>
+
+</html>
